@@ -1,0 +1,44 @@
+.result-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 35px;
+  background: #e9f1ff;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 77, 255, 0.15);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  color: #003f8c;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 70%;
+  border-radius: 14px;
+  margin: 20px 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #4d8bff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #3469d6;
+  transform: translateY(-2px);
+}
+
+p {
+  color: #003f8c;
+  margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+<div class="quiz-container">
+  <h2>{{ questions[currentQuestion].text }}</h2>
+
+  <div class="options">
+    <button 
+      *ngFor="let option of questions[currentQuestion].options"
+      (click)="selectOption(option.value)">
+      {{ option.text }}
+    </button>
+  </div>
+
+  <p>Pregunta {{ currentQuestion + 1 }} de {{ questions.length }}</p>
+</div>

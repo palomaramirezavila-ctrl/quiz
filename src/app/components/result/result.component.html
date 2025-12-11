@@ -1,9 +1,5 @@
-<div class="result-container">
-  <h2>Tu nivel migajero es: {{ result.level }}</h2>
+<h2>Tu nivel migajero es: {{ result.name }}</h2>
 
-  <img [src]="result.img" alt="resultado">
+<img [src]="result.img" alt="Resultado" class="result-img">
 
-  <p>Puntaje: {{ score }}</p>
-
-  <a routerLink="/">Volver a empezar</a>
-</div>
+<p>Puntaje total: {{ score }}</p>

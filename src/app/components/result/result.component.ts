@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ResultComponent {
   score = 0;
-  result = { level: '', img: '' };
+  result = { name: '', img: '' };
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
@@ -21,21 +21,41 @@ export class ResultComponent {
   }
 
   calculateResult() {
-    if (this.score <= 5) {
-      this.result = { level: "Sarahi", img: "https://i.imgur.com/0Ei44FM.jpeg" };
-    } else if (this.score <= 10) {
-      this.result = { level: "Dulce", img: "https://i.imgur.com/fNmZHJH.png" };
-    } else if (this.score <= 15) {
-      this.result = { level: "Paloma", img: "https://i.imgur.com/CVQI9rI.png" };
+    if (this.score <= 16) {
+      this.result = {
+        name: "Sarahi",
+        img: "https://i.imgur.com/0Ei44FM.jpeg"
+      };
     } else if (this.score <= 20) {
-      this.result = { level: "Miguel", img: "https://i.imgur.com/9Z0fWag.jpeg" };
-    } else if (this.score <= 25) {
-      this.result = { level: "Alejandro", img: "https://i.imgur.com/9b4tjMb.png" };
-    } else if (this.score <= 30) {
-      this.result = { level: "Astrit", img: "https://i.imgur.com/rfv20bw.png" };
+      this.result = {
+        name: "Dulce",
+        img: "https://i.imgur.com/fNmZHJH.png"
+      };
+    } else if (this.score <= 24) {
+      this.result = {
+        name: "Paloma",
+        img: "https://i.imgur.com/CVQI9rI.png"
+      };
+    } else if (this.score <= 28) {
+      this.result = {
+        name: "Miguel",
+        img: "https://i.imgur.com/9Z0fWag.jpeg"
+      };
+    } else if (this.score <= 31) {
+      this.result = {
+        name: "Alejandro",
+        img: "https://i.imgur.com/9b4tjMb.png"
+      };
+    } else if (this.score <= 34) {
+      this.result = {
+        name: "Astrit",
+        img: "https://i.imgur.com/rfv20bw.png"
+      };
     } else {
-      this.result = { level: "Victor", img: "https://i.imgur.com/L31y1xz.png" };
+      this.result = {
+        name: "Víctor",
+        img: "https://i.imgur.com/L31y1xz.png"
+      };
     }
   }
 }
-
